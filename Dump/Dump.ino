@@ -2,7 +2,7 @@
  * This sketch is for dumping Motorola MC6805P2.
  * 
  * We created this project in order to fix an HP powersupply which has a failed MC6805P2. 
- * MC68705P3 is reprogrammable and can be used to simulate MC6805P2.
+ * MC68705P3 is reprogrammable and can be used to emulate MC6805P2.
  * 
  * Thanks to Sean Riddle and his brilliant work on dumping and reprogramming this
  * Microprocessor, we were able to reproduce the dumping and reprogramming procedure
@@ -27,18 +27,18 @@
 #define MCU_CLK  6
 #define RD_RST  A5
 
-#define IO0     A0
-#define IO1     A1
-#define IO2     A2
-#define IO3     A3
-#define IO4      2
-#define IO5      3
-#define IO6      4
-#define IO7      5
+#define IO0     A0 //MC6805P2 PB0
+#define IO1     A1 //MC6805P2 PB1
+#define IO2     A2 //MC6805P2 PB2
+#define IO3     A3 //MC6805P2 PB3
+#define IO4      2 //MC6805P2 PB4
+#define IO5      3 //MC6805P2 PB5
+#define IO6      4 //MC6805P2 PB6
+#define IO7      5 //MC6805P2 PB7
 
-#define IO8     11 //MOSI
-#define IO9     12 //MISO
-#define IO10    13 //SCK
+#define IO8     11 //MC6805P2 PC2
+#define IO9     12 //MC6805P2 PC0
+#define IO10    13 //MC6805P2 PC1
 
 byte ROM_128_to_255[128];
 byte ROM_960_to_1923[964];
@@ -258,9 +258,9 @@ void printArray(byte *pdata, uint16_t len) {
 // MC6805P2 PB6 -> addr 3
 // MC6805P2 PB5 -> addr 4
 // MC6805P2 PB4 -> addr 5
-// MC6805P2 PC1 -> addr 6
-// MC6805P2 PC2 -> addr 7
-// MC6805P2 PC0 -> addr 8
+// MC6805P2 PC0 -> addr 6
+// MC6805P2 PC1 -> addr 7
+// MC6805P2 PC2 -> addr 8
 // MC6805P2 PB2 -> addr 9
 // MC6805P2 PB3 -> addr 10
 

@@ -2,7 +2,7 @@
  * This sketch is for programming Motorola MC68705P3.
  * 
  * We created this project in order to fix an HP powersupply which has a failed MC6805P2. 
- * MC68705P3 is reprogrammable and can be used to simulate MC6805P2.
+ * MC68705P3 is reprogrammable and can be used to emulate MC6805P2.
  * 
  * Thanks to Sean Riddle and his brilliant work on dumping and reprogramming this
  * Microprocessor, we were able to reproduce the dumping and reprogramming procedure

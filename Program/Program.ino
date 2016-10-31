@@ -1,7 +1,7 @@
 /*
  * This sketch is for programming Motorola MC68705P3.
  * 
- * We wrote this sketch in order to fix an HP powersupply which has a failed MC6805P2. 
+ * We created this project in order to fix an HP powersupply which has a failed MC6805P2. 
  * MC68705P3 is reprogrammable and can be used to simulate MC6805P2.
  * 
  * Thanks to Sean Riddle and his brilliant work on dumping and reprogramming this
@@ -45,10 +45,10 @@
 #define PROGRAMMED A7
 #define VERIFIED   A6
 
-// *******************************************************
-// Change option byte according to the datasheet as needed
-// *******************************************************
-#define OPTION_BYTE (0x40)
+// *************************************************************
+// Change option byte below according to the datasheet as needed
+// *************************************************************
+#define OPTION_BYTE (0x00)
 
 unsigned int Counter = 0;
 byte Change;
@@ -57,9 +57,12 @@ byte CounterResetState = LOW;
 byte Programmed = false;
 byte Verified   = false;
 
-// *******************************************
-// Copy the 3 arrays from Dump.ino output here
-// *******************************************
+// *************************************************************
+// Replace the 3 arrays below with the ones from Dump.ino output
+// *************************************************************
+byte ROM_128_to_255[128];
+byte ROM_960_to_1923[964];
+byte ROM_2040_to_2047[8];
 
 void setup() {
     int  i;

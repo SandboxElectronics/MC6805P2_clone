@@ -1,7 +1,7 @@
 /*
  * This sketch is for dumping Motorola MC6805P2.
  * 
- * We wrote this sketch in order to fix an HP powersupply which has a failed MC6805P2. 
+ * We created this project in order to fix an HP powersupply which has a failed MC6805P2. 
  * MC68705P3 is reprogrammable and can be used to simulate MC6805P2.
  * 
  * Thanks to Sean Riddle and his brilliant work on dumping and reprogramming this

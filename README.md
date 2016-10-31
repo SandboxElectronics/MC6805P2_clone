@@ -1,5 +1,5 @@
 # MC6805P2_clone
-Dumping MC6805P2 and programming MC68705P3 to simulate it
+Dumping MC6805P2 and programming MC68705P3 to emulate it
 
 We created this project in order to fix an HP powersupply which has a failed MC6805P2. 
 MC68705P3 is reprogrammable and can be used to emulate MC6805P2.
